@@ -123,6 +123,9 @@
     content: attr(value);
 }
 
+.skill-P {
+    color: rgb(160, 29, 29);
+}
 
 /*****************************media Query***************************/
 @media (max-width: 576px) {}
