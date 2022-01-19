@@ -10,11 +10,11 @@ const Skill = () => {
       <div className='container-fluid'>
         <div className='skill-wrap'>
           <div className='skill-heading'>
-            <h1>Skill</h1>
+            <h2>Technical Skills</h2>
             <p>
               I have practiced .net programming by my own which includes c#,
               ASP.net and MSSQl. after that NodeJS, ReactJS, Python and MongoDB
-              learned in <span className='skill-P'>skill Safari</span>.{' '}
+              learned in <span className='skill-P'>Skill Safari</span>.
             </p>
           </div>
           <div className='skill-content'>
