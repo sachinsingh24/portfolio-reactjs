@@ -1,0 +1,48 @@
+/** @format */
+
+.hero-wrap {
+  background-color: rgb(87, 84, 84);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  margin-top: 3rem;
+}
+
+.img-section {
+  margin: 2rem;
+}
+
+.img-section img {
+  border-radius: 20%;
+  height: 100%;
+  width: 100%;
+}
+
+.designation {
+  color: rgb(128, 167, 23);
+}
+
+/*--------------------------------------------------------------------Media-------------------------------------------*/
+@media (max-width: 575px) {}
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+/* 
+ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

@@ -1,0 +1,76 @@
+/** @format */
+
+.logo {
+  border-radius: 20%;
+}
+
+.brand-logo {
+  cursor: default;
+  padding: 0 auto;
+  margin-right: 0;
+}
+
+.color-nav {
+  background-color: #cccccc;
+}
+
+.menu-Container {
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.menu-item {
+  margin: auto 0.5rem;
+  color: rgb(114, 56, 56) !important;
+}
+
+.menu-item:active {
+  color: rgb(8, 129, 235) !important;
+}
+
+.social-Item {
+  color: #1b4965;
+  font-weight: 400;
+  font-size: 2rem;
+  align-items: center;
+  justify-self: center;
+  padding: 0.5rem !important;
+}
+
+.social {
+  font-size: 2rem;
+  display: flex;
+}
+
+.social:hover {
+  color: #0e1cdafa !important;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+/* 
+ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* .social-Item {
+    margin-left: 2rem;
+  } */
+  .social {
+    display: flex;
+    margin-left: 0;
+    margin-top: -0.5rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
