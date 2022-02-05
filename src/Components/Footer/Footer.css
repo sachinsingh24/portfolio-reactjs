@@ -12,12 +12,51 @@
     box-shadow: #ddd 0px 21px 20px;
 }
 
-.btn-sm {
-    padding: 0.25rem 0.5rem;
+.txt-section {
+    text-align: left;
+    color: #5b7183;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section .btn-sm {
+    padding: 0.25rem 0.5rem !important;
     font-size: .875rem;
     line-height: 1.5;
     border-radius: 0.2rem;
-    margin: auto 0.5rem;
+    margin: auto 0.5rem auto 0;
+}
+
+.txt-clr {
+    font-size: 1.5rem;
+    color: #24c7e9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #132f4a;
+    margin: 5px;
+    border-radius: 50%;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 12px 14px;
 }
 
 /* ------------------------------------------------copy-----------------------*/
@@ -52,27 +91,6 @@
     -webkit-animation: .6s infinite alternate pound;
 }
 
-.txt-clr {
-    font-size: 1.5rem;
-    color: #24c7e9;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.social-btn {
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    background: #132f4a;
-    margin: 5px;
-    border-radius: 50%;
-    color: white;
-    overflow: hidden;
-    position: relative;
-    padding: 12px 14px;
-}
 
 @media (min-width: 576px) {
     .text-sm-left {
