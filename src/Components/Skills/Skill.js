@@ -3,6 +3,7 @@
 import React from 'react';
 import './skill.css';
 import Data from './Skill_Data.js';
+import skill_img from '../img/skill.png';
 
 const Skill = () => {
   return (
@@ -16,6 +17,7 @@ const Skill = () => {
               ASP.net and MSSQl. after that NodeJS, ReactJS, Python and MongoDB
               learned in <span className='skill-P'>Skill Safari</span>.
             </p>
+            <img src={skill_img} alt='skill-structure' className='img-fluid' />
           </div>
           <div className='skill-content'>
             {Data.map((item, index) => {

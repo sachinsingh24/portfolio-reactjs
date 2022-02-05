@@ -2,22 +2,18 @@
 
 import React from 'react';
 import './About.css';
-import image from '../img/About-pic.svg';
+import image from '../img/cara1.png';
 import { BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 
 const About = () => {
   return (
-    <section>
+    <section className='right-section'>
       <div className='container About'>
         <div className='row'>
           <div className='col-12 col-lg-6 '>
-            <img
-              src={image}
-              alt='myPics'
-              className='border border-light img-fluid'
-            />
+            <img src={image} alt='myPics' className='img-fluid' />
           </div>
-          <div className='col-10 col-lg-6'>
+          <div className='col-10 col-lg-6 about-content'>
             <h1 className='about-header'>About Me</h1>
             <p>
               I'm Sachin singh a full stack developer, currently i am learning

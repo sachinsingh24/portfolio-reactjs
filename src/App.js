@@ -6,7 +6,6 @@ import Hero from './Components/Hero/Hero.js';
 import About from './Components/About/About.js';
 import Portfolio from './Components/Portfolio/Portfolio.js';
 import Skill from './Components/Skills/Skill.js';
-import Contact from './Components/Contacts/Contact.js';
 import Footer from './Components/Footer/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Scrollbars } from 'react-custom-scrollbars';
@@ -20,7 +19,6 @@ const App = () => {
         <About />
         <Portfolio />
         <Skill />
-        <Contact />
         <Footer />
       </div>
     </main>

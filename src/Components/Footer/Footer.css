@@ -1,3 +1,87 @@
-.footer-wrap {
-    background-color: #cccccc;
+.footer-section {
+    background-image: url("../img/left-section.png");
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.footer-section .btn-primary {
+    border: none;
+    background: #24c7e9 !important;
+    box-shadow: #ddd 0px 21px 20px;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    margin: auto 0.5rem;
+}
+
+/* ------------------------------------------------copy-----------------------*/
+.copy-right {
+    margin: 0;
+    background: rgb(87, 84, 84);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.copy-right p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #858585;
+    margin: 0;
+}
+
+.copy-right p a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #e6e6e6;
+    margin-left: 5px;
+}
+
+.copy-right p .fa {
+    color: #f3e415;
+    margin: 0 5px;
+    font-size: 11px;
+    animation: .6s infinite alternate pound;
+    -webkit-animation: .6s infinite alternate pound;
+}
+
+.txt-clr {
+    font-size: 1.5rem;
+    color: #24c7e9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #132f4a;
+    margin: 5px;
+    border-radius: 50%;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    padding: 12px 14px;
+}
+
+@media (min-width: 576px) {
+    .text-sm-left {
+        text-align: left !important;
+    }
+
+    .text-sm-right {
+        text-align: right !important;
+    }
+
+
 }
