@@ -8,10 +8,11 @@ const Footer = () => {
   return (
     <footer>
       <section className='pt-4 footer-section'>
+        <div className='anchor' id='Contact'></div>
         <div className='container'>
           <div className='row'>
             <div className='col-md-4 pb-4'>
-              <form id='contactForm' onsubmit='return false'>
+              <form id='contactForm' onSubmit='return false'>
                 <div className='form-group mb-3'>
                   <input
                     type='text'
@@ -67,7 +68,7 @@ const Footer = () => {
                   type='action'
                   id='submitBtn'
                   className='btn-sm btn-primary'
-                  onclick='validateSubmitForm()'>
+                  onClick='validateSubmitForm()'>
                   Submit
                 </button>
                 <button type='reset' className='btn-sm btn-primary'>
@@ -91,7 +92,7 @@ const Footer = () => {
                         </a>
                       </li>
                       <li className='txt-section text-left'>
-                        <i class='fa fa-map-marker' aria-hidden='true'></i>
+                        <i className='fa fa-map-marker' aria-hidden='true'></i>
                         Contact Us
                       </li>
                     </ul>
@@ -111,7 +112,7 @@ const Footer = () => {
                       whatever the industry.
                     </p>
                     <a href='#1' target='_blank' className='social-btn'>
-                      <i className='fa fa-facebook'></i>
+                      <i class='fa fa-facebook'></i>
                     </a>
                     <a href='#2' target='_blank' className='social-btn'>
                       <i className='fa fa-github'></i>

@@ -46,7 +46,7 @@
     text-align: center;
 }
 
-.social-btn {
+ .social-btn {
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -57,7 +57,8 @@
     overflow: hidden;
     position: relative;
     padding: 12px 14px;
-}
+    text-decoration: none;
+    }
 
 /* ------------------------------------------------copy-----------------------*/
 .copy-right {

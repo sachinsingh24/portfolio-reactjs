@@ -6,7 +6,8 @@ import Logo from '../img/Mylogoo.png';
 
 const Hero = () => {
   return (
-    <nav>
+    <section>
+      <div className='anchor' id='Home'></div>
       <div className='container-fluid'>
         <div className='hero-wrap'>
           <div className='hero-content'>
@@ -22,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </section>
   );
 };
 

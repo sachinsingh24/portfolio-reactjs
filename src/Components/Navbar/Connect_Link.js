@@ -2,23 +2,23 @@
 
 export const Connect = [
   {
-    url: '#../Navbar/Home_Navbar.js',
+    id: '#Home',
     name: 'Home',
   },
   {
-    url: '#../About/About.js',
+    id: '#About',
     name: 'About',
   },
   {
-    url: '#action3',
+    id: '#Portfolio',
     name: 'Portfolio',
   },
   {
-    url: '#action4',
+    id: '#Skills',
     name: 'Skills',
   },
   {
-    url: '#action5',
+    id: '#Contact',
     name: 'Contact',
   },
 ];

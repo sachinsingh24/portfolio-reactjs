@@ -8,6 +8,7 @@ import { BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 const About = () => {
   return (
     <section className='right-section'>
+      <div className='anchor' id='About'></div>
       <div className='container About'>
         <div className='row'>
           <div className='col-12 col-lg-6 '>

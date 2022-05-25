@@ -8,6 +8,7 @@ import skill_img from '../img/skill.png';
 const Skill = () => {
   return (
     <section>
+      <div className='anchor' id='Skills'></div>
       <div className='container-fluid'>
         <div className='skill-wrap'>
           <div className='skill-heading'>
