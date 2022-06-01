@@ -4,6 +4,7 @@ import React from 'react';
 import './About.css';
 import image from '../img/cara1.png';
 import { BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { NavLink } from 'react-bootstrap';
 
 const About = () => {
   return (
@@ -30,15 +31,24 @@ const About = () => {
               new technologies in computer science.
             </p>
             <h1 className='about-header '>Follow us</h1>
-            <a href='#index' className=' about-header'>
+            <NavLink
+              href='https://www.facebook.com/samroy24'
+              target='_blank'
+              className=' about-header social-Item'>
               <BsFacebook />
-            </a>
-            <a href='#index1' className=' about-header'>
+            </NavLink>
+            <NavLink
+              href='https://www.linkedin.com/in/sachin-singh-a2b641107'
+              target='_blank'
+              className=' about-header social-Item'>
               <BsLinkedin />
-            </a>
-            <a href='#index2' className=' about-header'>
+            </NavLink>
+            <NavLink
+              href='https://github.com/sachinsingh24'
+              target='_blank'
+              className=' about-header social-Item'>
               <BsGithub />
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

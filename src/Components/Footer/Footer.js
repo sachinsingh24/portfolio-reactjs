@@ -3,6 +3,7 @@
 import React from 'react';
 import './Footer.css';
 import 'font-awesome/css/font-awesome.min.css';
+import { NavLink } from 'react-bootstrap';
 
 const Footer = () => {
   return (
@@ -105,24 +106,36 @@ const Footer = () => {
                       <li className='txt-section text-left'> Legal notice</li>
                     </ul>
                   </div>
-                  <div className='col-md-4'>
+                  <div className='col-md-4 col-6'>
                     <h2 className='txt-clr text-center'>SACHIN SINGH</h2>
-                    <p className='text-center '>
+                    <p className='text-center txt-section'>
                       The full-stack design who focuses on digital products
                       whatever the industry.
                     </p>
-                    <a href='#1' target='_blank' className='social-btn'>
+                    <NavLink
+                      href='https://www.facebook.com/samroy24'
+                      target='_blank'
+                      className='social-btn'>
                       <i class='fa fa-facebook'></i>
-                    </a>
-                    <a href='#2' target='_blank' className='social-btn'>
+                    </NavLink>
+                    <NavLink
+                      href='https://github.com/sachinsingh24'
+                      target='_blank'
+                      className='social-btn'>
                       <i className='fa fa-github'></i>
-                    </a>
-                    <a href='#3' target='_blank' className='social-btn'>
+                    </NavLink>
+                    <NavLink
+                      href='https://www.linkedin.com/in/sachin-singh-a2b641107'
+                      target='_blank'
+                      className='social-btn'>
                       <i className='fa fa-linkedin'></i>
-                    </a>
-                    <a href='#4' target='_blank' className='social-btn'>
+                    </NavLink>
+                    <NavLink
+                      href='https://www.instagram.com/sachinsingh_24_01/'
+                      target='_blank'
+                      className='social-btn'>
                       <i className='fa fa-instagram'></i>
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>

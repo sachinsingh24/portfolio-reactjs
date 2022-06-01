@@ -23,13 +23,9 @@
   margin: auto 0.5rem;
  }
 
-.menu-item:hover {
-  color: #072dd8 !important;
-}
-
-/* .navbar-light .navbar-nav .nav-link:active {
-  color: rgb(8, 235, 148) !important;
-} */
+ a.menu-item.nav-link.active {
+   color: #6665ee !important;
+ }
 
 .social-Item {
   color: #1b4965;
@@ -59,7 +55,7 @@
 
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
-/* 
+/*
  Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 

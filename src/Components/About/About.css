@@ -10,6 +10,13 @@
 .about-header {
     font-size: 2rem;
     margin-right: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .social-Item {
+        display: inline !important;
+
 }
 
 .right-section {
