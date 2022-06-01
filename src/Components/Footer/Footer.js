@@ -80,7 +80,7 @@ const Footer = () => {
             <div className='col-md-8'>
               <div className='container'>
                 <div className='row'>
-                  <div className='col-md-4 col-6'>
+                  <div className='col-md-4 col-6 px-0 px-sm-3'>
                     <h5 className='text-left'>Contact</h5>
                     <ul className='list-unstyled text-left'>
                       <li className='txt-section text-left'>
@@ -106,36 +106,38 @@ const Footer = () => {
                       <li className='txt-section text-left'> Legal notice</li>
                     </ul>
                   </div>
-                  <div className='col-md-4 col-6'>
+                  <div className='col-md-4'>
                     <h2 className='txt-clr text-center'>SACHIN SINGH</h2>
                     <p className='text-center txt-section'>
                       The full-stack design who focuses on digital products
                       whatever the industry.
                     </p>
-                    <NavLink
-                      href='https://www.facebook.com/samroy24'
-                      target='_blank'
-                      className='social-btn'>
-                      <i class='fa fa-facebook'></i>
-                    </NavLink>
-                    <NavLink
-                      href='https://github.com/sachinsingh24'
-                      target='_blank'
-                      className='social-btn'>
-                      <i className='fa fa-github'></i>
-                    </NavLink>
-                    <NavLink
-                      href='https://www.linkedin.com/in/sachin-singh-a2b641107'
-                      target='_blank'
-                      className='social-btn'>
-                      <i className='fa fa-linkedin'></i>
-                    </NavLink>
-                    <NavLink
-                      href='https://www.instagram.com/sachinsingh_24_01/'
-                      target='_blank'
-                      className='social-btn'>
-                      <i className='fa fa-instagram'></i>
-                    </NavLink>
+                    <div className='footer-social'>
+                      <NavLink
+                        href='https://www.facebook.com/samroy24'
+                        target='_blank'
+                        className='social-btn'>
+                        <i class='fa fa-facebook'></i>
+                      </NavLink>
+                      <NavLink
+                        href='https://github.com/sachinsingh24'
+                        target='_blank'
+                        className='social-btn'>
+                        <i className='fa fa-github'></i>
+                      </NavLink>
+                      <NavLink
+                        href='https://www.linkedin.com/in/sachin-singh-a2b641107'
+                        target='_blank'
+                        className='social-btn'>
+                        <i className='fa fa-linkedin'></i>
+                      </NavLink>
+                      <NavLink
+                        href='https://www.instagram.com/sachinsingh_24_01/'
+                        target='_blank'
+                        className='social-btn'>
+                        <i className='fa fa-instagram'></i>
+                      </NavLink>
+                    </div>
                   </div>
                 </div>
               </div>
