@@ -16,20 +16,28 @@
 
     .social-Item {
         display: inline !important;
-
 }
 
 .right-section {
-    background-image: url(https://www.howkya.com/img/Right-section.png);
+    /* background-image: url(https://www.howkya.com/img/Right-section.png); */
     background-position: top right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: rgb(87, 84, 84);
 }
-
+.back-layer {
+    background-color: #fff;
+    border-top-left-radius: 450px;
+}
 
 @media (max-width: 992px) {
     .about-content {
         margin-left: 50px;
+    }
+}
+@media (max-width: 545px) {
+    .back-layer {
+        background-color: #fff;
+        border-top-left-radius: 240px;
     }
 }
