@@ -8,9 +8,9 @@ import { NavLink } from 'react-bootstrap';
 const Footer = () => {
   return (
     <footer>
-      <section className='pt-4 footer-section'>
+      <section className='footer-section'>
         <div className='anchor' id='Contact'></div>
-        <div className='container'>
+        <div className='container pt-4'>
           <div className='row'>
             <div className='col-md-4 pb-4'>
               <form id='contactForm' onSubmit='return false'>

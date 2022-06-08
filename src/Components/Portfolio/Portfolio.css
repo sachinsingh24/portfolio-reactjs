@@ -12,23 +12,25 @@
 .img-Size {
     width: 100%;
     height: 100%;
-    border-radius: 15% 5% 5% 5%;
+    border-radius: 0 5% 5% 5%;
+    border-top-left-radius: 51px;
 }
 
 .project-Box {
     border-radius: 15% 3%;
     margin: 1.5rem auto;
-    background-color: lightgrey;
+    background-color: #ffffff;
     color: black;
     padding: 1rem !important;
 }
 
 .description {
     padding: 1rem 0.1rem;
+    font-weight: 500;
 }
 
 .project-Box:hover {
-    background-image: linear-gradient(rgb(45, 228, 173), rgba(87, 78, 226, 0.87), rgb(209, 127, 219));
+    background-image: linear-gradient(45deg, rgb(45, 228, 173), rgba(87, 78, 226, 0.87), rgb(209, 127, 219));
     outline: none;
     border: none;
     color: white;
@@ -59,14 +61,14 @@
 /* -----------------------------------media----------------------------- */
 @media (min-width: 576px) {
     .img-Size {
-        width: 400px;
+        width: 100%;
         height: 250px;
-        border-radius: 5%;
-
+        border-radius: 0 5% 5% 5%;
+        border-top-left-radius: 51px;
     }
 
     .project-Box {
-        border-radius: 15% 3%;
+        border-radius:45px 5%;
     }
 
 

@@ -35,7 +35,7 @@ const Portfolio = () => {
                       <p className='description'>
                         {readMore
                           ? description
-                          : `${description.substring(0, 50)}...`}
+                          : `${description.substring(0, 42)}...`}
                         <button
                           className={`readmore`}
                           onClick={() => setReadMore(!readMore)}>
