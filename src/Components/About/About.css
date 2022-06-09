@@ -27,7 +27,8 @@
 }
 .back-layer {
     background-color: #fff;
-    border-top-left-radius: 450px;
+     border-top-left-radius: 450px;
+/* clip-path: ellipse(130px 140px at 100% 100%); */
 }
 
 @media (max-width: 992px) {
