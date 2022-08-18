@@ -6,6 +6,14 @@ import 'font-awesome/css/font-awesome.min.css';
 import { NavLink } from 'react-bootstrap';
 
 const Footer = () => {
+  const handleClick = (id) => {
+    window.scrollTo({
+      top: id,
+      behavior: 'smooth',
+    });
+  };
+  const validateSubmitForm = () => {};
+  const handleSubmit = (e) => {};
   return (
     <footer>
       <section className='footer-section'>
@@ -13,7 +21,7 @@ const Footer = () => {
         <div className='container pt-4'>
           <div className='row'>
             <div className='col-md-4 pb-4'>
-              <form id='contactForm' onSubmit='return false'>
+              <form id='contactForm' onSubmit={handleSubmit}>
                 <div className='form-group mb-3'>
                   <input
                     type='text'
@@ -69,7 +77,7 @@ const Footer = () => {
                   type='action'
                   id='submitBtn'
                   className='btn-sm btn-primary'
-                  onClick='validateSubmitForm()'>
+                  onClick={validateSubmitForm()}>
                   Submit
                 </button>
                 <button type='reset' className='btn-sm btn-primary'>
@@ -80,33 +88,69 @@ const Footer = () => {
             <div className='col-md-8'>
               <div className='container'>
                 <div className='row'>
-                  <div className='col-md-4 col-6 px-0 px-sm-3'>
+                  <div className='col-md-3 col-6 px-0 px-sm-3'>
                     <h5 className='text-left'>Contact</h5>
                     <ul className='list-unstyled text-left'>
                       <li className='txt-section text-left'>
                         <i
                           className='fa fa-volume-control-phone'
                           aria-hidden='true'></i>
-                        <a href='tel:+917447754388' style={{ color: 'unset' }}>
+                        <a
+                          href='tel:+917447754388'
+                          style={{ color: 'unset', fontSize: '17px' }}>
                           {' '}
                           +917447754388{' '}
                         </a>
                       </li>
                       <li className='txt-section text-left'>
-                        <i className='fa fa-map-marker' aria-hidden='true'></i>
-                        Contact Us
+                        <i className='fa fa-map-marker' aria-hidden='true'>
+                          {' '}
+                        </i>
+                        &nbsp;
+                        <a
+                          href='https://goo.gl/maps/NFwAm54715apWy4VA'
+                          target={'_blank'}
+                          rel='noreferrer'
+                          className=''>
+                          Location
+                        </a>
                       </li>
                     </ul>
                   </div>
-                  <div className='col-md-4 col-6'>
-                    <h5 className='text-left'>Community</h5>
-                    <ul className='list-unstyled text-left'>
-                      <li className='txt-section text-left'> About Us</li>
-                      <li className='txt-section text-left'> Our Clients</li>
-                      <li className='txt-section text-left'> Legal notice</li>
+                  <div className='col-md-3 col-6'>
+                    <h5 className='text-center'>Graphical item</h5>
+                    <ul className='list-unstyled text-center'>
+                      <li className='txt-section'>
+                        <button
+                          className='menutabs'
+                          onClick={() => handleClick(0)}>
+                          Home
+                        </button>
+                      </li>
+                      <li className='txt-section'>
+                        <button
+                          className='menutabs'
+                          onClick={() => handleClick(255)}>
+                          About Us
+                        </button>
+                      </li>
+                      <li className='txt-section'>
+                        <button
+                          className='menutabs'
+                          onClick={() => handleClick(700)}>
+                          Portfolio
+                        </button>
+                      </li>
+                      <li className='txt-section'>
+                        <button
+                          className='menutabs'
+                          onClick={() => handleClick(1800)}>
+                          Skills
+                        </button>
+                      </li>
                     </ul>
                   </div>
-                  <div className='col-md-4'>
+                  <div className='col-md-6 px-5'>
                     <h2 className='txt-clr text-center'>SACHIN SINGH</h2>
                     <p className='text-center txt-section'>
                       The full-stack design who focuses on digital products
@@ -117,7 +161,7 @@ const Footer = () => {
                         href='https://www.facebook.com/samroy24'
                         target='_blank'
                         className='social-btn'>
-                        <i class='fa fa-facebook'></i>
+                        <i className='fa fa-facebook'></i>
                       </NavLink>
                       <NavLink
                         href='https://github.com/sachinsingh24'
