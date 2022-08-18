@@ -7,7 +7,7 @@ const Skill_Data = [
   },
   {
     program: 'CSS-3',
-    percent: '60%',
+    percent: '70%',
   },
   {
     program: 'JavaScript',
@@ -15,7 +15,7 @@ const Skill_Data = [
   },
   {
     program: 'ReactJS',
-    percent: '65%',
+    percent: '75%',
   },
   {
     program: 'NodeJS',
@@ -23,15 +23,15 @@ const Skill_Data = [
   },
   {
     program: 'C#',
-    percent: '85%',
+    percent: '65%',
   },
   {
     program: 'ASP.Net',
-    percent: '80%',
+    percent: '60%',
   },
   {
     program: 'MS-Sql',
-    percent: '90%',
+    percent: '80%',
   },
   {
     program: 'Python',
@@ -43,7 +43,7 @@ const Skill_Data = [
   },
   {
     program: 'MongoDB',
-    percent: '65%',
+    percent: '95%',
   },
 ];
 export default Skill_Data;
