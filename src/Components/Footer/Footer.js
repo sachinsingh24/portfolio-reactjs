@@ -4,6 +4,7 @@ import React from 'react';
 import './Footer.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { NavLink } from 'react-bootstrap';
+import logo from '../img/logo.png';
 
 const Footer = () => {
   const handleClick = (id) => {
@@ -111,7 +112,7 @@ const Footer = () => {
                           href='https://goo.gl/maps/NFwAm54715apWy4VA'
                           target={'_blank'}
                           rel='noreferrer'
-                          className=''>
+                          style={{ color: 'unset', fontSize: '17px' }}>
                           Location
                         </a>
                       </li>
@@ -144,7 +145,7 @@ const Footer = () => {
                       <li className='txt-section'>
                         <button
                           className='menutabs'
-                          onClick={() => handleClick(1800)}>
+                          onClick={() => handleClick(1500)}>
                           Skills
                         </button>
                       </li>
@@ -182,6 +183,9 @@ const Footer = () => {
                         <i className='fa fa-instagram'></i>
                       </NavLink>
                     </div>
+                  </div>
+                  <div className='col-md-12 d-flex'>
+                    <img src={logo} alt='logo' className='footer-logo' />
                   </div>
                 </div>
               </div>

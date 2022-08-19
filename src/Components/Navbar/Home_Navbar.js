@@ -7,6 +7,7 @@ import { Navbar, Container, Nav, NavLink } from 'react-bootstrap';
 import { BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { Connect } from './Connect_Link';
 
+
 const Home_Navbar = () => {
   const [Active, setActive] = React.useState('#Home');
   const handleSelect = (selectedKey) => {
@@ -14,27 +15,28 @@ const Home_Navbar = () => {
   };
   return (
     <Navbar
-      // sticky='top'
+      collapseOnSelect
       expand='lg'
-      variant='light'
-      className={`color-nav sticky-top`}>
+      className={`color-nav sticky-top`}
+      variant='light'>
       <Container>
         <Navbar.Brand
-          href='#'
-          style={{ cursor: 'default', padding: '0', margin: 'auto 0' }}>
+          href='#home'
+          style={{
+            cursor: 'default',
+            padding: '0',
+            margin: 'auto 0',
+          }}>
           <img src={Logo} alt='logo' className='logo' />
         </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls='navbarScroll'
-          to='scrollbar-sunny-morning'
-        />
-        <Navbar.Collapse id='navbarScroll'>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav
             activeKey={Active}
             defaultActiveKey='#home'
             className='menu-Container my-lg-0'
             id='scrollbar-sunny-morning'
-            style={{ maxHeight: '260px' }}
+            // style={{ maxHeight: '260px' }}
             navbarScroll
             onSelect={handleSelect}>
             {Connect.map((item, index) => {
@@ -77,5 +79,4 @@ const Home_Navbar = () => {
     </Navbar>
   );
 };
-
 export default Home_Navbar;

@@ -17,7 +17,7 @@ const Portfolio = () => {
             <h4 className='display-5'>
               <b>My Projects</b>
             </h4>
-            <p>
+            <p className='p-head-size'>
               Listed below projects created while learning in skill safari as a
               intern.
             </p>
@@ -32,7 +32,7 @@ const Portfolio = () => {
                       <img className='img-Size' src={Source} alt={Project} />
                     </div>
                     <div className='card-center'>
-                      <p className='description'>
+                      <p className='description mb-0'>
                         {readMore
                           ? description
                           : `${description.substring(0, 42)}...`}

@@ -12,10 +12,17 @@
     margin-right: 0.5rem;
     align-items: center;
     justify-content: center;
-    }
+}
+.about-content {
+    color: #1a446e;
+}
 
-    .social-Item {
-        display: inline !important;
+.about-content p {
+    font-weight: 500
+}
+
+.social-Item {
+    display: inline !important;
 }
 
 .right-section {
@@ -23,12 +30,12 @@
     background-position: top right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: rgb(87, 84, 84);
+    background-color: #2099b3;
 }
 .back-layer {
-    background-color: #fff;
-     border-top-left-radius: 450px;
-/* clip-path: ellipse(130px 140px at 100% 100%); */
+    background-color: #e6f6ff;
+    border-top-left-radius: 450px;
+    /* clip-path: ellipse(130px 140px at 100% 100%); */
 }
 
 @media (max-width: 992px) {

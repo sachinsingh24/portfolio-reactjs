@@ -2,6 +2,11 @@
 
 .logo {
   border-radius: 20%;
+  max-width: 50px;
+  }
+
+  .navbar-light .navbar-brand {
+    color: #2099b3 !important;
 }
 
 .brand-logo {
@@ -11,8 +16,16 @@
 }
 
 .color-nav {
-  background-color: #cccccc;
-}
+  background-color: #e6f6ff;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #1a446e !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #2099b3 !important;
+  }
 
 .menu-Container {
   font-size: 1.5rem;
@@ -24,11 +37,11 @@
  }
 
  a.menu-item.nav-link.active {
-   color: #6665ee !important;
+   color: #2099b3 !important;
  }
 
 .social-Item {
-  color: #1b4965;
+  color: #2099b3 !important;
   font-weight: 400;
   font-size: 2rem;
   align-items: center;
@@ -41,8 +54,8 @@
   display: flex;
 }
 
-.social:hover {
-  color: #030855a8 !important;
+.social-Item:hover {
+  color: #23acc7 !important;
   }
 
   .anchor {
@@ -57,7 +70,11 @@
  No media query for `xs` since this is the default in Bootstrap */
 /*
  Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (max-width: 576px) {
+  .anchor {
+    top: -100px;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}

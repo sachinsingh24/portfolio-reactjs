@@ -1,11 +1,12 @@
 /** @format */
 
 .hero-wrap {
-  background-color: rgb(87, 84, 84);
-  color: aliceblue;
+  background-color: #2099b3;
+  color: #ffffff;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: -1px;
 }
 
 .hero-content {
@@ -14,12 +15,15 @@
 
 .img-section {
   margin: 2rem;
+  max-width: 225px;
+  max-height: 225px;
 }
 
 .img-section img {
   border-radius: 20%;
   height: 100%;
   width: 100%;
+  box-shadow: 5px 5px 20px 5px #888888;
 }
 
 .designation {

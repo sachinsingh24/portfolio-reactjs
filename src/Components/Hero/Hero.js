@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Hero.css';
-import Logo from '../img/Mylogoo.png';
+import Logo from '../img/logo.png';
 
 const Hero = () => {
   return (

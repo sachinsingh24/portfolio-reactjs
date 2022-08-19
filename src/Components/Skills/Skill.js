@@ -26,7 +26,10 @@ const Skill = () => {
                 <article className='skill-bars' key={index}>
                   <div className='bar'>
                     <div className='info'>
-                      <span>{item.program}</span>
+                      <span className='logos'>
+                        {item.logos}
+                        {` ${item.program}`}
+                      </span>
                     </div>
                     <div className='progress-line title'>
                       <span
