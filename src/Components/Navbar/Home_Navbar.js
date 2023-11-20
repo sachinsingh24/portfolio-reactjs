@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Navbar.css';
-import Logo from '../img/logo.png';
+import Logo from '../img/multiflylogo.png';
 import { Navbar, Container, Nav, NavLink } from 'react-bootstrap';
 import { BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { Connect } from './Connect_Link';

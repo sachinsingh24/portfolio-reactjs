@@ -4,7 +4,7 @@ import React from 'react';
 import './Footer.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { NavLink } from 'react-bootstrap';
-import logo from '../img/logo.png';
+import logo from '../img/multiflylogo.png';
 
 const Footer = () => {
   const handleClick = (id) => {
