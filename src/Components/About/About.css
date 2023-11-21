@@ -7,6 +7,15 @@
     width: 100%;
 }
 
+.about-image{
+    filter: drop-shadow(5px 5px 5px #2099b3);
+    transition: all .5s linear;
+}
+
+.about-image:hover{
+    transform: scale(1.1);
+}
+
 .about-header {
     font-size: 2rem;
     margin-right: 0.5rem;

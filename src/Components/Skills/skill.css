@@ -52,6 +52,19 @@ body {
     height: 30px;
 }
 
+.skill-image{
+    filter: drop-shadow(5px 5px 5px #2099b3);
+    transition: all .5s linear;
+    &:hover{
+        transform: scale(1.05);
+        rotate: 360deg;
+    }
+}
+
+/* .skill-image:hover{
+    transform: scale(1.1);
+} */
+
 .skill-bars .bar .info {
     margin-bottom: 2px;
 }

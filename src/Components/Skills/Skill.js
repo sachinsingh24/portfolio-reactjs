@@ -18,7 +18,7 @@ const Skill = () => {
               ASP.net and MSSQl. after that NodeJS, ReactJS, Python and MongoDB
               learned in <span className='skill-P'>Skill Safari</span>.
             </p>
-            <img src={skill_img} alt='skill-structure' className='img-fluid' />
+            <img src={skill_img} alt='skill-structure' className='img-fluid skill-image' />
           </div>
           <div className='skill-content'>
             {Data.map((item, index) => {

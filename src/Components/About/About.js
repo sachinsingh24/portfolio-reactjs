@@ -14,7 +14,7 @@ const About = () => {
         <div className="container About">
           <div className="row">
             <div className="col-12 col-lg-6 ">
-              <img src={image} alt="myPics" className="img-fluid" />
+              <img src={image} alt="myPics" className="img-fluid about-image" />
             </div>
             <div className="col-10 col-lg-6 about-content">
               <h1 className="about-header">About Me</h1>

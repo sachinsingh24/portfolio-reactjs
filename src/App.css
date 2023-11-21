@@ -2,3 +2,7 @@
     width: 1200%;
     height: 900%;
 }
+::selection {
+    background: #12bee3;
+    color: #ffff00;
+}
