@@ -15,7 +15,7 @@ const Hero = () => {
             <h4>
               I'm<span> Prince</span> Singh
             </h4>
-            <h3 className='designation'>Full Stack Developer</h3>
+            <h3 className='designation'>The Electrician</h3>
             <span>Let's build something amazing together! 🚀 </span>
           </div>
           <div className='img-section'>
