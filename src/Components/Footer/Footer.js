@@ -97,7 +97,7 @@ const Footer = () => {
                           className='fa fa-volume-control-phone'
                           aria-hidden='true'></i>
                         <a
-                          href='tel:+917447754388'
+                          href='tel:+919044607033'
                           style={{ color: 'unset', fontSize: '17px' }}>
                           {' '}
                           +917447754388{' '}
