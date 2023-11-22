@@ -100,7 +100,7 @@ const Footer = () => {
                           href='tel:+919044607033'
                           style={{ color: 'unset', fontSize: '17px' }}>
                           {' '}
-                          +917447754388{' '}
+                          +919044607033{' '}
                         </a>
                       </li>
                       <li className='txt-section text-left'>
