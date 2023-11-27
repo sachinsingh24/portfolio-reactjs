@@ -97,10 +97,10 @@ const Footer = () => {
                           className='fa fa-volume-control-phone'
                           aria-hidden='true'></i>
                         <a
-                          href='tel:+917447754388'
+                          href='tel:+919044607033'
                           style={{ color: 'unset', fontSize: '17px' }}>
                           {' '}
-                          +917447754388{' '}
+                          +919044607033{' '}
                         </a>
                       </li>
                       <li className='txt-section text-left'>
@@ -152,7 +152,7 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className='col-md-6 px-5'>
-                    <h2 className='txt-clr text-center'>SACHIN SINGH</h2>
+                    <h2 className='txt-clr text-center'>PRINCE SINGH</h2>
                     <p className='text-center txt-section'>
                       The full-stack design who focuses on digital products
                       whatever the industry.
