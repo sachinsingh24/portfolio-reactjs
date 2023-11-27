@@ -77,12 +77,12 @@ const Footer = () => {
                 <button
                   type='action'
                   id='submitBtn'
-                  className='btn-sm btn-primary'
+                  className='submit-button'
                   onClick={validateSubmitForm()}>
-                  Submit
+                  SUBMIT
                 </button>
-                <button type='reset' className='btn-sm btn-primary'>
-                  Reset
+                <button type='reset' className='reset-button'>
+                  RESET
                 </button>
               </form>
             </div>

@@ -139,6 +139,25 @@ h5 {
        text-align: right !important;
    }
 
+.submit-button, .reset-button{
+    width: 100px;
+    height: 43px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #2099b3;
+    border: none;
+    margin: 5px;
+    color: #FFF;
+    transition: all .3s linear;
+    box-sizing: border-box;
+    font-weight: bold;
+    &:hover{
+        background-color: transparent;
+        border: 2px solid #2099b3;
+        color: #24b9d9;
+    }
+}
+
 
 @media (max-width: 576px) {
 
