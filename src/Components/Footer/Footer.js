@@ -97,10 +97,10 @@ const Footer = () => {
                           className='fa fa-volume-control-phone'
                           aria-hidden='true'></i>
                         <a
-                          href='tel:+919044607033'
+                          href='tel:+917447754388'
                           style={{ color: 'unset', fontSize: '17px' }}>
                           {' '}
-                          +919044607033{' '}
+                          +917447754388{' '}
                         </a>
                       </li>
                       <li className='txt-section text-left'>
@@ -119,6 +119,17 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className='col-md-3 col-6'>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60299.42506690141!2d73.16573148423485!3d19.163989542506723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ed5c9bc71bbd%3A0x87d539b0621850f3!2sBadlapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1701082921632!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      style={{ border: 0 }}
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                  {/* <div className='col-md-3 col-6'>
                     <h5 className='text-center'>Graphical item</h5>
                     <ul className='list-unstyled text-center'>
                       <li className='txt-section'>
@@ -152,7 +163,7 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className='col-md-6 px-5'>
-                    <h2 className='txt-clr text-center'>PRINCE SINGH</h2>
+                    <h2 className='txt-clr text-center'>SACHIN SINGH</h2>
                     <p className='text-center txt-section'>
                       The full-stack design who focuses on digital products
                       whatever the industry.
@@ -186,7 +197,7 @@ const Footer = () => {
                   </div>
                   <div className='col-md-12 d-flex'>
                     <img src={logo} alt='logo' className='footer-logo' />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
