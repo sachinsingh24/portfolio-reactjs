@@ -66,8 +66,7 @@ body {
     filter: drop-shadow(5px 5px 5px #2099b3);
     transition: all .5s linear;
     &:hover{
-        transform: scale(1.05);
-        rotate: 360deg;
+        transform: scale(1.03);
     }
 }
 

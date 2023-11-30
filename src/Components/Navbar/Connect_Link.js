@@ -7,7 +7,7 @@ export const Connect = [
   },
   {
     id: '#About',
-    name: 'About',
+    name: 'About Us',
   },
   {
     id: '#Portfolio',

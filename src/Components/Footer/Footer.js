@@ -1,20 +1,49 @@
 /** @format */
 
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Footer.css';
 import 'font-awesome/css/font-awesome.min.css';
-import { NavLink } from 'react-bootstrap';
-import logo from '../img/multiflylogo.png';
+import emailjs from '@emailjs/browser';
+// import { NavLink } from 'react-bootstrap';
+// import logo from '../img/multiflylogo.png';
 
 const Footer = () => {
-  const handleClick = (id) => {
-    window.scrollTo({
-      top: id,
-      behavior: 'smooth',
+  const initialFormData = {
+    f_name: '',
+    l_name: '',
+    message: '',
+    email: '',
+    mobile_number: ''
+  };
+  const [formData, setFormData] = useState(initialFormData);
+  const form = useRef();
+  // const handleClick = (id) => {
+  //   window.scrollTo({
+  //     top: id,
+  //     behavior: 'smooth',
+  //   });
+  // };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
     });
   };
+
   const validateSubmitForm = () => {};
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('subhashwangde', 'template_9znctci', form.current, 'FSRWoas_S5Y2YiDDZ')
+    .then((result) => {
+        console.log(result.text);
+        console.log('message send');
+        setFormData(initialFormData)
+    }, (error) => {
+        console.log(error.text);
+    });
+  };
   return (
     <footer>
       <section className='footer-section'>
@@ -22,7 +51,7 @@ const Footer = () => {
         <div className='container pt-4'>
           <div className='row'>
             <div className='col-md-4 pb-4'>
-              <form id='contactForm' onSubmit={handleSubmit}>
+              <form id='contactForm' onSubmit={handleSubmit} ref={form}>
                 <div className='form-group mb-3'>
                   <input
                     type='text'
@@ -30,6 +59,9 @@ const Footer = () => {
                     id='fname'
                     aria-describedby='emailHelp'
                     placeholder='Enter First Name'
+                    name='f_name'
+                    value={formData.f_name}
+                    onChange={handleInputChange}
                   />
                   <small
                     className='text-danger font-weight-bold'
@@ -42,13 +74,20 @@ const Footer = () => {
                     id='lname'
                     aria-describedby='emailHelp'
                     placeholder='Enter Last Name'
+                    name='l_name'
+                    value={formData.l_name}
+                    onChange={handleInputChange}
                   />
                 </div>
                 <div className='form-group mb-3'>
                   <textarea
                     className='form-control'
                     id='description'
-                    rows='3'></textarea>
+                    rows='3'
+                    name='message'
+                    value={formData.message}
+                    onChange={handleInputChange}
+                  ></textarea>
                 </div>
                 <div className='form-group mb-3'>
                   <input
@@ -57,6 +96,9 @@ const Footer = () => {
                     id='email'
                     aria-describedby='emailHelp'
                     placeholder='Enter Email'
+                    name='email'
+                    value={formData.email}
+                    onChange={handleInputChange}
                   />
                   <small
                     className='text-danger font-weight-bold'
@@ -69,6 +111,9 @@ const Footer = () => {
                     id='mobile'
                     aria-describedby='emailHelp'
                     placeholder='Enter Mobile No'
+                    name='mobile_number'
+                    value={formData.mobile_number}
+                    onChange={handleInputChange}
                   />
                   <small
                     className='text-danger font-weight-bold'
@@ -119,15 +164,16 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className='col-md-3 col-6'>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60299.42506690141!2d73.16573148423485!3d19.163989542506723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ed5c9bc71bbd%3A0x87d539b0621850f3!2sBadlapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1701082921632!5m2!1sen!2sin"
-                      width="600"
-                      height="450"
-                      style={{ border: 0 }}
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120562.19529706649!2d72.91905928538553!3d19.214035642285832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8fcfe76fd59%3A0xcf367d85f7c50283!2sThane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1701084824772!5m2!1sen!2sin"
+                    width="400"
+                    height="400"
+                    style={{ border: '0' }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title='Company address'
+                  ></iframe>
                   </div>
                   {/* <div className='col-md-3 col-6'>
                     <h5 className='text-center'>Graphical item</h5>
